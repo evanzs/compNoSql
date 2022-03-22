@@ -31,8 +31,7 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest   
     steps: 
-      - name: Cache node modules
-        uses: actions/cache@v2
+      - name: Cache node modules        
         with:
           path: "/home/ubuntu"
           run: ls
