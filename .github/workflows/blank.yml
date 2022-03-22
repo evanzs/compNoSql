@@ -23,3 +23,12 @@ jobs:
           REMOTE_HOST: "ec2-3-135-187-163.us-east-2.compute.amazonaws.com"
           REMOTE_USER: "ubuntu"
           TARGET: "/home/ubuntu"
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - run: yarn
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:      
+      - run: pm2 restart 0      
