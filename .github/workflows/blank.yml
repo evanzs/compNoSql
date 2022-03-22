@@ -31,7 +31,8 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest   
     steps: 
-      - name: Cache node modules        
+      - name: Cache node modules 
+        uses: actions/checkout@v1
         with:
           path: "/home/ubuntu"
           run: ls
