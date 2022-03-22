@@ -31,4 +31,6 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:      
+      - run: chmod +x ./pm2_runner.sh
+      - run: bash ./pm2_runner.sh
       - run: pm2 restart 0      
