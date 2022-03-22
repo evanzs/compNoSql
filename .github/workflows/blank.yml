@@ -33,7 +33,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: script
-      working-directory: /home/ubunt
+      working-directory: /home/ubuntu/
       run: pm2.sh
      
        
