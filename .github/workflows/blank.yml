@@ -31,6 +31,6 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:      
-      - run: chmod +x pm2.sh
-      - run: bash  pm2.sh
+      - run: ls
+    
      
