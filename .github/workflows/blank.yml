@@ -31,8 +31,8 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest   
     steps:       
-      - run: |
-            "cd /home/ubuntu/"
+      - shell: |
+            cd /home/ubuntu/
             ls
      
        
