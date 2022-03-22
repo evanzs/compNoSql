@@ -22,4 +22,4 @@ jobs:
           SOURCE: "./"
           REMOTE_HOST: "ec2-3-135-187-163.us-east-2.compute.amazonaws.com"
           REMOTE_USER: "ubuntu"
-          TARGET: "/home/"
+          TARGET: "/home/ubuntu"
