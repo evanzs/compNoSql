@@ -29,8 +29,12 @@ jobs:
       - run: yarn
   build:
     needs: setup
-    runs-on: ubuntu-latest
-    steps:      
-      - run: ls
+    runs-on: ubuntu-latest   
+    steps: 
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: "/home/ubuntu"
+          run: ls
     
      
