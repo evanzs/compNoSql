@@ -1,3 +1,3 @@
 ﻿# compNoSql
 
-Teste de push
+Testé de push
